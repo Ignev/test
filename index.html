@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+    <div id="ad-viewport">
+        <div class="logo">
+            <div class="logo__img"></div>
+        </div>
+        
+        <div class="screen">
+            <div class="screen__layer"></div>
+            <div class="screen__block screen__left">
+                <div class="cloud cloud__6">
+                    <div class="cloud__img"></div>
+                </div>
+                <div class="cloud cloud__7">
+                    <div class="cloud__img"></div>
+                </div>
+                <div class="cloud cloud__8">
+                    <div class="cloud__img"></div>
+                </div>
+                <ul>
+                    <li></li>
+                    <li data-calibrate-x="true" data-depth-x="0.80" data-depth-y="0">
+                        <div class="toy toy__6">
+                            <div class="toy__img"></div>
+                            <div class="push-go">
+                                <div class="push-go__img"></div>
+                            </div>
+                            <div class="light-ton">
+                                <div class="light-ton__img"></div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="cta-block">
+                    <p class="cta-block__text">10933<br>Große Baustelle<br>mit Licht und Ton</p>
+                    <div class="button">JETZT Kaufen</div>
+                </div>
+                <div class="button button_top">Kreativität verbindet</div>
+                <p class="corypright">©2020 The LEGO Group.</p>
+            </div>
+            <div class="screen__block screen__center">
+                <ul>
+                    <li></li>
+                    <li data-calibrate-x="true" data-depth-x="0.30" data-depth-y="0">
+                        <div class="cloud cloud__1">
+                            <div class="cloud__img"></div>
+                        </div>
+                    </li>
+                    <li data-calibrate-x="true" data-depth-x="0.20" data-depth-y="0"> 
+                        <div class="cloud cloud__2">
+                            <div class="cloud__img"></div>
+                        </div>
+                    </li>
+                    <li data-calibrate-x="true" data-depth-x="0.10" data-depth-y="0">
+                        <div class="toy toy__1">
+                            <div class="toy__img"></div>
+                        </div>
+                    </li>
+                    <li data-calibrate-x="true" data-depth-x="0.40" data-depth-y="0">
+                        <div class="toy toy__2">
+                            <div class="toy__img"></div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="button">Mehr Spiel,<br>Mehr Kreativität</div>
+                <div class="indicate-move">
+                    <img class="indicate-move__img" src="img/arrow.png" alt="">
+                    <p class="indicate-move__text">und entdecke die große<br>baustelle mit licht und ton</p>
+                </div>
+            </div>
+            <div class="screen__block screen__right">
+                <ul>
+                    <li></li>
+                    <li data-calibrate-x="true" data-depth-x="0.30" data-depth-y="0">
+                        <div class="cloud cloud__3">
+                            <div class="cloud__img"></div>
+                        </div>
+                    </li>
+                    <li data-calibrate-x="true" data-depth-x="0.60" data-depth-y="0">
+                        <div class="cloud cloud__4">
+                            <div class="cloud__img"></div>
+                        </div>
+                    </li>
+                    <li data-calibrate-x="true" data-depth-x="0.10" data-depth-y="0">
+                        <div class="cloud cloud__5">
+                            <div class="cloud__img"></div>
+                        </div>
+                    </li>
+                    <li data-calibrate-x="true" data-depth-x="0.30" data-depth-y="0">
+                        <div class="toy toy__3">
+                            <div class="toy__img"></div>
+                        </div>
+                    </li>
+                    <li data-calibrate-x="true" data-depth-x="0.40" data-depth-y="0">
+                        <div class="toy toy__4">
+                            <div class="toy__img"></div>
+                        </div>
+                    </li>
+                    <li data-calibrate-x="true" data-depth-x="0.50" data-depth-y="0">
+                        <div class="toy toy__5">
+                            <div class="light">
+                                <img src="img/light.png" alt="">
+                            </div>
+                            <div class="toy__img"></div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="cta-block">
+                    <p class="cta-block__text">10933<br>Große Baustelle<br>mit Licht und Ton</p>
+                    <div class="button">JETZT Kaufen</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="button_test_api">Aktiviere für das volle Erlebnis deine Bewegungssteuerung <span>Jetzt aktivieren</span></div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/fulltilt.min.js"></script>
+    <script src="js/libraries.min.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        var x_click = document.getElementsByTagName('body')[0];
+        x_click.addEventListener("click", clickout_1);
+        var isInterstitial = true;
+        var clickTag="";
+        var dspx_debug = readGETParameter("dspx_debug");
+        function readGETParameter(c){var o=window.location.search.substring(1);var n=o.split("&");for(var e=0;e<n.length;e++){var i=n[e].split("=");if(i[0]==c){return decodeURIComponent(i[1])}}return c=="encodelevel"?2:0}
+        function fireASCClicks(){var _c="dspx_clicktagASC",_nn=5;var cASC=function(c,nn){var n=window.location.search.substring(1),i=n.split("&");var aa=[];for(var e=0;e<i.length;e++){var o=i[e].split("=");for(var ni=0;ni<nn;ni++){if(ni==0)cc=c;else cc=c+ni;if(o[0]==cc){aa.push(decodeURIComponent(o[1]))}}}return aa};var ctASC=cASC(_c,_nn);for(i=0;i<ctASC.length;i++){if(dspx_debug==1)console.log("fire Click ASC:"+ctASC[i]);(new Image).src=ctASC[i]}}
+        function clickout_1(){
+            fireASCClicks();
+            var e=clickTag;
+            if(dspx_debug==1){console.log(e);}
+            window.open(e)
+        }
+    </script>
+</body>
+</html>
